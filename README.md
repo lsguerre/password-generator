@@ -11,6 +11,7 @@ deployed: https://lsguerre.github.io/password-generator/
 repo: https://github.com/lsguerre/password-generator
 
 
+![password generator](https://user-images.githubusercontent.com/88417140/138399360-ec318d33-7881-4731-8c5c-385837ded0d2.PNG)
 
 
 
