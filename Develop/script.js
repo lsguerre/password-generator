@@ -22,10 +22,9 @@ then display the genenerated password on the page
 */
   var length = (window.prompt("How long would you like your password to be? Please choose a number between 8 and 128"))
   //validate prompt character length
-  if (isNaN(length)  || length < 8 || length > 128) {  prompt("Please enter a valid password length. Password must between 8 and 128 characters") 
-  return null}
- 
-  
+  if (isNaN(length)  || length < 8 || length > 128) {  
+    prompt("Please enter a valid password length. Password must between 8 and 128 characters") 
+   return null}
 
   var lowercase = window.confirm("If you'd like to include lower case letters, please click 'OK'")
   var uppercase = window.confirm("If you'd like to include upper case letters, please click 'OK'")
@@ -56,18 +55,14 @@ then display the genenerated password on the page
   for (i = 0; i < length; i++) {
     password += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
   }
-    console.log(password)
+    
     return password
   }
-
-
-
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  console.log(password)
 
   passwordText.value = password;
 
